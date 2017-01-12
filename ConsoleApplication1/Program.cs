@@ -19,23 +19,23 @@ namespace ConsoleApplication1
 
                 if (sign.ToString().Equals("a", StringComparison.OrdinalIgnoreCase))
                 {
-                    Console.WriteLine(Add(value1, value2));
+                    Console.WriteLine(CalcUtility.Add(value1, value2));
                     break;
                 }
                 else if (sign.ToString().Equals("s", StringComparison.OrdinalIgnoreCase))
                 {
 
-                    Console.WriteLine(Sub(value1, value2));
+                    Console.WriteLine(CalcUtility.Sub(value1, value2));
                     break;
                 }
                 else if (sign.ToString().Equals("M", StringComparison.OrdinalIgnoreCase))
                 {
-                    Console.WriteLine(Multi(value1, value2));
+                    Console.WriteLine(CalcUtility.Multi(value1, value2));
                     break;
                 }
                 else if (sign.ToString().Equals("D", StringComparison.OrdinalIgnoreCase))
                 {
-                    Console.WriteLine(Dvide(value1, value2));
+                    Console.WriteLine(CalcUtility.Dvide(value1, value2));
                     break;
                 }
                 else
@@ -86,21 +86,6 @@ namespace ConsoleApplication1
                 }
             }
         }
-        static int Add(int var1, int var2)
-        {
-            return var1 + var2;
-        }
-        static int Sub(int var1, int var2)
-        {
-            return var1 + var2;
-        }
-        static int Multi(int var1, int var2)
-        {
-            return var1 * var2;
-        }
-        static int Dvide(int var1, int var2)
-        {
-            return var1 / var2;
-        }
+       
     }
 }
